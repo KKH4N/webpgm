@@ -1,0 +1,21 @@
+p, form{
+    font-family: "휴먼편지체";
+}
+form{
+    padding-left:15px;
+}
+span {
+    font-family: Gothic;
+    font-weight:bold;
+    color: blue;
+}
+body {
+    background-color: aliceblue;
+}
+form {
+    background-color: pink;
+}
+footer {
+    background-color: orange;
+    border-radius: 10px;
+}
