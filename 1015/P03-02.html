@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.write()</title>
+</head>
+<body>
+    <script>
+        document.write("<h3>document.write()로 표만들기<h3><hr>");
+        document.write("<table border='1'><tr><td>n</td>");
+        for(let n1=0;n1<=9;n1++){
+            document.write("<td>");
+            document.write(n1);
+            document.write("</td>");
+        }
+        document.write("</tr><tr><td>n&#178;</td>");
+        for(let n1=0;n1<=9;n1++){
+            document.write("<td>");
+            document.write(n1*n1);
+            document.write("</td>");
+        }
+        document.write("</tr></table>");
+    </script>
+</body>
+</html>
