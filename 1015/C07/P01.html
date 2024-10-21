@@ -11,8 +11,7 @@
     <script>
         let n=[];
         for(let i=0;i<10;i++){
-            let  m = Math.random()*100;
-            let r = Math.floor(m);
+            let r = Math.floor(Math.random()*100);
             n[i]=r;
         }
         for(let i=0;i<10;i++){
@@ -21,9 +20,11 @@
         document.write("<hr>");
         let bn = n[0];
         for(let i=1;i<10;i++){
-            if(bn<n[i]){ bn=n[i]; }
+            if(bn<n[i]){ 
+                bn=n[i]; }
         }
-        document.write("제일 큰 수는"+bn+"<hr>");
+        document.write("제일 큰 수는 "+bn);
+        document.write("<hr>");
         let n2 = n.sort();
         for(let i=0;i<10;i++){
             document.write(n2[i]+" ");

@@ -10,11 +10,14 @@
     <hr>
     <script>
         let day = prompt("월화수목금토일 중에서 입력하세요", "");
-        if(day == "월" || day == "화" || day == "수" || day == "목"){
-            document.write(day + "은(는) 출근");
-        }
-        else{
-            document.write(day + "은(는) 휴일");
+        switch(day){
+            case "월": document.write(day+"은 출근"); break;
+            case "화": document.write(day+"는 출근"); break;
+            case "수": document.write(day+"는 출근"); break;
+            case "목": document.write(day+"은 출근"); break;
+            case "금": document.write(day+"은 휴일"); break;
+            case "토": document.write(day+"는 휴일"); break;
+            case "일": document.write(day+"은 휴일"); break;
         }
     </script>
 </body>
