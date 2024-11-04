@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+    <style>
+        table{
+            text-align: center;
+        }
+        td {
+            width: 100px;
+        }
+        input {
+            width: 70%;
+        }
+    </style>
+    <script>
+        let exp = "";
+        function number(text){
+            exp += text;
+            document.getElementById("ip").value = exp;
+        }
+        function compute(){
+            document.getElementById("ip").value = eval(exp);
+        }
+        function textclear(){
+            document.getElementById("ip").value = "0";
+            exp = "";
+        }
+        function backspace(){
+            length = document.getElementById("ip").value.length;
+            document.getElementById("ip").value = document.getElementById("ip").value.substring(0, length-1);
+            exp = document.getElementById("ip").value.toString();
+            document.getElementById("ip").value = exp;
+        }
+    </script>
+</head>
+<body>
+    <h3>계산기 만들기</h3>
+    <hr>
+    <input type="text" id="ip" value="0">
+    <table border=0 style="width:70%;">
+        <tr colspan=4>
+            <td><input type="button" value="Back" onclick="backspace()"></td>
+            <td><input type="button" value="CE" onclick="textclear()"></td>
+            <td><input type="button" value="C" onclick="textclear()"></td>
+            <td><input type="button" value="=" onclick="compute()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="number('7')"></td>
+            <td><input type="button" value="8" onclick="number('8')"></td>
+            <td><input type="button" value="9" onclick="number('9')"></td>
+            <td><input type="button" value="/" onclick="number('/')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="number('4')"></td>
+            <td><input type="button" value="5" onclick="number('5')"></td>
+            <td><input type="button" value="6" onclick="number('6')"></td>
+            <td><input type="button" value="*" onclick="number('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="number('1')"></td>
+            <td><input type="button" value="2" onclick="number('2')"></td>
+            <td><input type="button" value="3" onclick="number('3')"></td>
+            <td><input type="button" value="-" onclick="number('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="number('0')"></td>
+            <td><input type="button" value="+" onclick="number('+')"></td>
+            <td><input type="button" value="NONE"></td>
+            <td><input type="button" value="NONE"></td>
+        </tr>
+    </table>
+</body>
+</html>

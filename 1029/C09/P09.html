@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onmouseover과 onmouseout</title>
+    <script>
+        let exp = ["explain1", "explain2", "explain3", "explain4"];
+        let d;
+
+        function f() {
+            d = document.getElementById("d1");
+
+            let arr = document.getElementsByTagName("li");
+            for (let i = 0; i < arr.length; i++) {
+                arr[i].addEventListener("mouseover", over, false);
+                arr[i].addEventListener("mouseout", hideCommentDiv, false);
+            }
+        }
+
+        function over(e) {
+            let n = 0;
+            switch (e.target.id) {
+                case "l0" :
+                    n = 0;
+                    break;
+                case "l1" :
+                    n = 1;
+                    break;
+                case "l2" :
+                    n = 2;
+                    break;
+                case "l3" :
+                    n = 3;
+                    break;
+            }
+            setDiv(exp[n], e);
+        }
+
+        function setDiv(text, e) {
+            d.innerHTML = text;
+            d.style.left = e.clientX + "px";
+            d.style.top = e.clientY + "px";
+            d.style.border = "1px solid yellowgreen";
+            d.style.background = "aliceblue";
+            d.style.visibility = "visible";
+            d.style.width = "200px";
+            d.style.height = "80px";
+        }
+
+        function hideCommentDiv() {
+            d.style.visibility = "hidden";
+        }
+
+    </script>
+</head>
+<body onload="f()">
+    <h3>아이템에 마우스를 올리면 설명 출력</h3>
+    <hr>
+    <p>여름 방학 때 하고 싶은 것들</p>
+    <ul>
+        <li id="l0">자전거로 대한민국 일주</li>
+        <li id="l1">책 100권 읽기</li>
+        <li id="l2">철인 3종 경기 준비</li>
+        <li id="l3">자바스크립트 정복</li>
+    </ul>
+    <div id="d1" style="position:absolute;"></div>
+</body>
+</html>
