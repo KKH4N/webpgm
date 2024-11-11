@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduce myself</title>
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Tailwind을 이용한 사용자 정의 스타일 */
+    .header-title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #007BFF;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: bold;
+      color: #007BFF;
+      margin-top: 20px;
+    }
+
+    .profile-img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .btn-custom {
+      background-color: #28a745;
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- 네비게이션 바 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Introduce</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">자기소개</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">기술 스킬</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">연락처</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 헤더 -->
+  <header>
+    <h1 class="header-title">Hello, I'm Kyeonghan Kim</h1><br>
+  </header>
+
+  <!-- 프로필 이미지와 간단한 소개 -->
+  <div class="container text-center" id="about">
+    <img src="https://via.placeholder.com/150" alt="KIM의 프로필 사진" class="profile-img">
+  </div>
+
+  <!-- 자기소개 섹션 -->
+  <div class="container mt-5" id="skills">
+    <h2 class="section-title">자기소개</h2><br>
+    <p>안녕하세요. 저는 소프트웨어학과에 재학 중인 대학생 김경한입니다. 프로그래밍과 소프트웨어 개발에 대한 큰 열정을 가지고 있으며, 특히 인공지능과 머신러닝에 큰 관심을 두고 공부하고 있습니다.
+    목표로는 AI기술을 활용한 서비스를 전개하는 개발자가 되고자 합니다.</p>
+  </div>
+
+  <!-- 기술 스킬 섹션 -->
+  <div class="container mt-5">
+    <h2 class="section-title">기술 스킬</h2><br>
+    <ul class="list-group">
+      <li class="list-group-item">C</li>
+      <li class="list-group-item">Java</li>
+      <li class="list-group-item">HTML, CSS</li>
+      <li class="list-group-item">Javascript</li>
+    </ul>
+  </div>
+
+  <!-- 연락처 섹션 -->
+  <div class="container mt-5" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>이메일: kim@email.com</p>
+    <p><a href="https://www.linkedin.com/in/%EA%B2%BD%ED%95%9C-%EA%B9%80-64b159299/" target="_blank">LinkedIn</a></p>
+  </div>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <p>&copy; 2024 김경한. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS (CDN) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

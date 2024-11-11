@@ -1,0 +1,113 @@
+<HTML>
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.title = "Introduction";
+
+            const navbar = document.createElement('nav');
+            navbar.style.backgroundColor = '#333';
+            navbar.style.padding = '15px 30px';
+            navbar.style.color = 'white';
+            navbar.style.textAlign = 'center';
+            navbar.style.fontSize = '1.8rem';
+            navbar.style.fontWeight = 'bold';
+            navbar.textContent = 'Introduction';
+            document.body.insertBefore(navbar, document.body.firstChild);
+
+            const container = document.createElement('div');
+            container.style.maxWidth = '800px';
+            container.style.margin = '0 auto';
+            container.style.padding = '20px';
+            container.style.fontFamily = 'Arial, sans-serif';
+            
+            const header = document.createElement('header');
+            header.style.textAlign = 'center';
+            header.style.marginBottom = '30px';
+            
+            const headerTitle = document.createElement('h1');
+            headerTitle.textContent = "Hello! I'm Kyeonghan Kim";
+            headerTitle.style.color = '#007BFF';
+            header.appendChild(headerTitle);
+            container.appendChild(header);
+
+            const aboutSection = document.createElement('section');
+            aboutSection.style.padding = '20px';
+            aboutSection.style.border = '1px solid #ddd';
+            aboutSection.style.borderRadius = '8px';
+            aboutSection.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+            aboutSection.style.marginBottom = '20px';
+
+            const aboutTitle = document.createElement('h2');
+            aboutTitle.textContent = "About Me";
+            aboutTitle.style.color = '#555';
+            aboutSection.appendChild(aboutTitle);
+
+            const aboutText = document.createElement('p');
+            aboutText.textContent = "안녕하세요. 저는 소프트웨어학과에 재학 중인 대학생 김경한입니다. 프로그래밍과 소프트웨어 개발에 대한 큰 열정을 가지고 있으며, 특히 인공지능과 머신러닝에 큰 관심을 두고 공부하고 있습니다. 목표로는 AI기술을 활용한 서비스를 전개하는 개발자가 되고자 합니다.";
+            aboutSection.appendChild(aboutText);
+
+            container.appendChild(aboutSection);
+
+            const skillsSection = document.createElement('section');
+            skillsSection.style.padding = '20px';
+            skillsSection.style.border = '1px solid #ddd';
+            skillsSection.style.borderRadius = '8px';
+            skillsSection.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+            skillsSection.style.marginBottom = '20px';
+
+            const skillsTitle = document.createElement('h2');
+            skillsTitle.textContent = "Technical Skills";
+            skillsTitle.style.color = '#555';
+            skillsSection.appendChild(skillsTitle);
+
+            const skillsList = document.createElement('ul');
+            skillsList.style.listStyleType = 'circle';
+            skillsList.style.paddingLeft = '20px';
+            const skills = ["C", "Java", "Python", "HTML & CSS", "JavaScript"];
+            skills.forEach(skill => {
+                const listItem = document.createElement('li');
+                listItem.textContent = skill;
+                listItem.style.marginBottom = '5px';
+                skillsList.appendChild(listItem);
+            });
+            skillsSection.appendChild(skillsList);
+            container.appendChild(skillsSection);
+
+            const contactSection = document.createElement('section');
+            contactSection.style.padding = '20px';
+            contactSection.style.border = '1px solid #ddd';
+            contactSection.style.borderRadius = '8px';
+            contactSection.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+            contactSection.style.marginBottom = '20px';
+
+            const contactTitle = document.createElement('h2');
+            contactTitle.textContent = "Contact";
+            contactTitle.style.color = '#555';
+            contactSection.appendChild(contactTitle);
+
+            const emailText = document.createElement('p');
+            emailText.innerHTML = '<strong>Email:</strong> kim@email.com';
+            contactSection.appendChild(emailText);
+
+            const linkedInText = document.createElement('p');
+            linkedInText.innerHTML = '<a href="https://www.linkedin.com/in/%EA%B2%BD%ED%95%9C-%EA%B9%80-64b159299/" target="_blank" style="color: #007BFF;">LinkdeIn</a>';
+            contactSection.appendChild(linkedInText);
+
+            container.appendChild(contactSection);
+
+            const footer = document.createElement('footer');
+            footer.style.textAlign = 'center';
+            footer.style.padding = '15px';
+            footer.style.backgroundColor = '#333';
+            footer.style.color = 'white';
+            footer.style.marginTop = '30px';
+            footer.textContent = "© 2024 김경한. All rights reserved.";
+            
+            document.body.appendChild(container);
+            document.body.appendChild(footer);
+        });
+    </script>
+</head>
+<body>
+</body>
+</HTML>
