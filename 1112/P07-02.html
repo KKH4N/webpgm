@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산수 문제를 풀어 봅시다.</title>
+    <style>
+        .pr {
+            width: 70px;
+        }
+    </style>
+    <script>
+        function init(){
+            let arr = ["+","-","/","*"];
+            let pArr = document.getElementsByClassName("pr");
+            let aArr = document.getElementsByClassName("an");
+            for(let i=0;i<4;i++){
+                let ex = Math.floor(Math.random()*20+1) + arr[Math.floor(Math.random()*4)] + Math.floor(Math.random()*20+1);
+                pArr[i].innerHTML = ex;
+                pArr[i].style.textDecoration="none";
+                aArr[i].value="";
+            }
+            document.getElementById("N").innerHTML=0;
+        }
+        function calc(){
+            let n=0;
+            let pArr = document.getElementsByClassName("pr");
+            let aArr = document.getElementsByClassName("an");
+            for(let i=0;i<4;i++){
+                if(eval(pArr[i].innerHTML)==aArr[i].value){ n++; }
+                else{ pArr[i].style.textDecoration="line-through"; }
+            }
+            document.getElementById("N").innerHTML=n;
+        }
+    </script>
+</head>
+<body onload="init()">
+    <h3>산수 문제를 풀어 봅시다.</h3>
+    <p>수식을 계산하여 답을 입력하고 채점 버튼을 누르세요.</p>
+    <hr>
+    <table>
+        <tr><td><p class="pr"></p></td><td><input type="text" class="an"></td></tr>
+        <tr><td><p class="pr"></p></td><td><input type="text" class="an"></td></tr>
+        <tr><td><p class="pr"></p></td><td><input type="text" class="an"></td></tr>
+        <tr><td><p class="pr"></p></td><td><input type="text" class="an"></td></tr>
+        <tr><td><button onclick="calc()">채점</button></td><td><span id="N">0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="init()">다시</button></td></tr>
+    </table>
+</body>
+</html>

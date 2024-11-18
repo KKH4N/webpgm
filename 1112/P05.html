@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            border: 1px solid gray ;
+        }
+    </style>
+    <script>
+        function start(){
+            let cl = document.getElementById("clock");
+            let dt = new Date();
+            cl.innerHTML = dt.toLocaleTimeString();
+            setTimeout("start()",1000);
+        }
+    </script>
+</head>
+<body onload="start()">
+    <h3>div 태그에 시계 만들기</h3>
+    <hr>
+    <div id="clock"></div>
+</body>
+</html>
