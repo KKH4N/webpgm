@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학점 매기기</title>
+    <script>
+        let addWorker = new Worker('calc.js');
+        function grade(){
+            let score = prompt("점수를 숫자로 입력하세요","");
+            let msg = document.getElementById("msg");
+            msg.innerHTML += score;
+            addWorker.postMessage(score);
+            addWorker.onmessage = function (e) {
+                let msg = document.getElementById("msg");
+                msg.innerHTML += "="+ e.data;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>학점 매기기</h3><hr>
+    <button onclick="grade()">점수 입력</button>
+    <div id="msg"></div>
+</body>
+</html>

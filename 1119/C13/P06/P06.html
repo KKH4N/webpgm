@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>워커 테스크 만들기</title>
+    <script>
+        let mulWorker = new Worker("mul.js");
+        function send(){
+            let parameters = {
+                num1: document.getElementById("num1").value,
+                num2: document.getElementById('num2').value
+            }
+            mulWorker.postMessage(parameters);
+        }
+        mulWorker.onmessage = function (e) {
+            document.getElementById("answer").value = e.data;
+        }
+    </script>
+</head>
+<body>
+    <h3>곱셈하기</h3><hr>
+    <input id="num1" type="text"> x <input id="num2" type="text">
+    <button id="mul" onclick="send()">곱하기</button>
+    <input id="answer" type="text">
+</body>
+</html>

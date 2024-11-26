@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일기 쓰기</title>
+</head>
+<body>
+    <h3>일기 쓰기</h3><hr>
+    <span>
+        오늘
+        <script>
+            let dt = new Date();
+            document.write(dt.toLocaleDateString());
+        </script>
+    </span><br>
+    <textarea name="dairy" id="dairy" rows="15" cols="50"></textarea><br>
+    <button type="button" onclick="store()">저장</button>
+    <button type="button" onclick="window.open('print.html')">보기</button>
+    <script>
+        let dairy = document.getElementById("dairy");
+        function store(){
+            if(!window.localStorage) {
+                alert("로컬 스토리지를 지원하지 않습니다.");
+                return;
+            }
+            localStorage.setItem(dt.toLocaleDateString(), dairy.value);
+        }
+    </script>
+</body>
+</html>

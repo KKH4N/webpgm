@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포스트잇 출력</title>
+    <style>
+        table {
+            background-color: aliceblue;
+        }
+        span {
+            border: 1px solid skyblue;
+            padding: 2px 3px 2px 3px;
+        }
+    </style>
+</head>
+<body>
+    <h3>포스트잇 출력</h3><hr>
+    <table>
+        <script>
+            for(let i=0;i<localStorage.length;i++){
+                let key = localStorage.key(i);
+                let memo = localStorage.getItem(key);
+                document.write("<tr><td><span>"+(i+1)+"</span></td><td>");
+                document.write("<td>"+key+"</td>");
+                document.write("<td>"+memo+"</td>");
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이름과 학번 입력</title>
+</head>
+<body>
+    <h3>이름과 학번 입력</h3>
+    <hr>
+    이름 <input id="name" type="text"><br>
+    학번 <input id="num" type="text">
+    <button type="button" id="save" onclick="store()">스토리지에 저장</button><br><br>
+    <a href="Search.html">이름으로 학번 검색 페이지로</a>
+    <script>
+        let name = document.getElementById("name");
+        let num = document.getElementById("num");
+
+        function store(){
+            if(!window.sessionStorage){
+                alert("세션 스토리지를 지원하지 않습니다.");
+                return;
+            }
+            sessionStorage.setItem(name.value, num.value);
+        }
+    </script>
+</body>
+</html>

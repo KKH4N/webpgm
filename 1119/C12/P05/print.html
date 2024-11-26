@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택한 도시와 음식 보여주기</title>
+    <style>
+        p {
+            border: 1px solid yellowgreen;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h3>선택한 도시와 음식 보여주기</h3><hr>
+    <p>
+        <script>
+            document.write("city="+localStorage.getItem("city"));
+            document.write("<br>food="+localStorage.getItem("food"));
+        </script>
+    </p>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오디오 재생</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        span {
+            border: 1px solid yellowgreen;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+        th {
+            text-align: left;
+            border-bottom: 1px solid black;
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>오디오 재생</h3>
+    <hr>
+    <audio id="audio" controls>
+        웹 브라우저가 audio 태그를 지원하지 않습니다.
+    </audio>
+    
+    <table>
+        <tr>
+            <td><span>1</span></td>
+            <th>애국가</th>
+            <td>
+                <button onclick="play(Aegukga.mp3)">재생</button>
+                <button onclick="audio.pause()">중지</button>
+            </td>
+        </tr>
+    
+        <tr>
+            <td><span>2</span></td>
+            <th>Moon Glow</th>
+            <td>
+                <button onclick="play(MoonGlow.mp3)">재생</button>
+                <button onclick="audio.pause()">중지</button>
+            </td>
+        </tr>
+        <tr>
+            <td><span>3</span></td>
+            <th>Embraceable You</th>
+            <td>
+                <button onclick="play(EmbraceableYou.mp3)">재생</button>
+                <button onclick="audio.pause()">중지</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        let audio = document.getElementById("audio");
+        function play(name){
+            audio.src=name;
+            audio.play();
+        }
+    </script>  
+</body>
+</html>
