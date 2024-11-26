@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .nested {
+            display: none;
+        }
+        .active > .nested {
+            display: block;
+        }
+        .tree-item {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>자바스크립트 문법 기초</h1>
+        <ul class="list-unstyled">
+            <!-- Node 1 -->
+            <li class="tree-item">
+                <span>1. 변수</span>
+                <ul class="nested list-unstyled ms-4">
+                    <li class="tree-item">
+                        <span>1.1 변수만들기</span>
+                        <ul class="nested list-unstyled ms-4">
+                            <li class="tree-item">
+                                <p>1.1.1 예제01_여러분의나이가_담긴변수</p>
+                                <pre>
+                                    &lt;!DOCTYPE HTML&gt;
+                                    &lt;html&gt;
+                                    &lt;head&gt;
+                                        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+                                        &lt;title&gt; &lt;/title&gt;
+                                    
+                                        &lt;script&gt;
+                                            /*
+                                             예제01: 여러분의 나이가 담긴 변수 age를 만들어 주세요.
+                                    
+                                            */
+                                            var age = 30;
+                                    
+                                        &lt;/script&gt;
+                                    &lt;/head&gt;
+                                    
+                                    &lt;body&gt;
+                                    
+                                    &lt;/body&gt;
+                                    &lt;/html&gt;
+                                        </pre>
+
+                            </li>
+                            <li class="tree-item">
+                                <p>1.1.2 예제02_여러분의_이름_나이가_담긴변수</p>
+                                <li class="tree-item">
+                                    <pre>
+                                        &lt;!DOCTYPE HTML&gt;
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+                                            &lt;title&gt; &lt;/title&gt;
+                                        
+                                            &lt;script&gt;
+                                                /*
+                                                 예제02: 여러분의 이름과 나이를 저장한 변수를 만들어 주세요.
+                                                */
+                                                var name = &quot;ddandongne&quot;;
+                                                var age = 30;
+                                        
+                                            &lt;/script&gt;
+                                        &lt;/head&gt;
+                                        
+                                        &lt;body&gt;
+                                        
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                            </pre>
+                                </li>
+                            </li>
+                        </ul>
+                        <br><span>1.2 변수에 저장할 수 있는 데이터 종류</span>
+                        <br><span>1.3 변수에 데이터 저장하고 변경하기</span>
+                        <br><span>1.4 변수값이 자동으로 읽혀지는 경우</span>
+
+                    </li>
+                </ul>
+            </li>
+            <!-- Node 2 -->
+            <li class="tree-item">
+                <span>2. 기본연산자</span>
+                <ul class="nested list-unstyled ms-4">
+                    <li class="tree-item">
+                        <span></span>
+                        <ul class="nested list-unstyled ms-4">
+                            <li class="tree-item">
+                                <span>2.1.1</span>
+                                <ul class="nested list-unstyled ms-4">
+                                    <li>2.1.1.1</li>
+                                    <li>2.1.1.2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <!-- Node 3 -->
+            <li class="tree-item">
+                <span>3. 형변환</span>
+                <ul class="nested list-unstyled ms-4">
+                    <li class="tree-item">
+                        <span>3.1</span>
+                        <ul class="nested list-unstyled ms-4">
+                            <li class="tree-item">
+                                <span>3.1.1</span>
+                                <ul class="nested list-unstyled ms-4">
+                                    <li>3.1.1.1</li>
+                                    <li>3.1.1.2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript to handle Tree View -->
+    <script>
+        document.querySelectorAll('.tree-item > span').forEach(item => {
+            item.addEventListener('click', function (e) {
+                e.stopPropagation();
+                const parent = this.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
