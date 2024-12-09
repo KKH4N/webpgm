@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Introducing Toss</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Selecao
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <!--tailwind-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        caveat: ['Caveat', 'cursive'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">TOSS</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">Overview</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#team">Executives</a></li>
+          <li><a href="#recent-posts">Posts</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <img src="media/Toss_Logo_Primary_Reverse.png" class="img-fluid">
+          </div>
+        </div>
+
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Overview</h2>
+        <p>Introducing Toss</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              토스(Toss)는 대한민국의 핀테크(FinTech) 스타트업으로, (주)비바리퍼블리카(Viva Republica)가 운영하는 종합 금융 플랫폼으로 간편송금 서비스를 시작으로 다양한 금융서비스를 제공하며, 국내 금융 기술 혁신을 선도하고 있는 어플입니다.
+            </p><br>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>출시일 : 2015년 2월 26일</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>플랫폼 : Android, IOS</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>소재지 : 서울특별시 강남구 테헤란로 142 4, 10, 11, 12, 13, 22, 23층 </span><br></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>간편송금 서비스부터 계좌, 카드, 신용점수, 보험 등 각종 조회 서비스뿐만 아니라 계좌 개설, 적금, 대출 상품 가입 등의 뱅킹 서비스 및 인증 서비스까지 금융소비자가 필요로 하는 서비스를 지속적으로 발굴해 사용자에게 쉽고, 빠르고, 안전한 금융 경험을 제공하며 종합 금융 플랫폼으로 자리매김했습니다.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>What does toss offer</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-bank" style="color: #0dcaf0;"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>토스뱅크</h3>
+              </a>
+              <p>토스뱅크는 직장인뿐만 아니라 소상공인과 저신용자도 부담 없이 이용할 수 있는 접근성 높은 은행을 목표로 합니다. 금융을 사용자 중심으로 재편하며, 쉽고 직관적인 서비스를 통해 모두에게 열린 금융을 실현하고자 합니다.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-cash-coin" style="color: #fd7e14;"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>토스 증권</h3>
+              </a>
+              <p>토스증권은 투자를 전문적인 영역으로만 여겨 시작을 망설였던 사람들을 위해, 쉽고 재밌게 투자할 수 있는 서비스를 제공합니다. 어렵게 느껴졌던 투자를 친근하게 바꾸며, 누구나 투자 문화를 일상 속에서 경험할 수 있도록 돕고자 합니다.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-file-medical" style="color: #20c997;"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>토스 보험</h3>
+              </a>
+              <p>
+                토스인슈어런스는 보험 상품을 많이 판매하는 것이 아니라, 고객의 위험을 최소화하고 상황에 맞는 최적의 상품을 추천하는 데 집중합니다. 최고의 고객 만족을 지향하며, 변화를 요구하는 보험 업계에서 혁신을 주도하고 있습니다.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-credit-card" style="color: #df1529;"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>토스페이먼츠</h3>
+              </a>
+              <p>
+                토스페이먼츠는 어려운 결제 경험을 혁신하고, 소비자에게는 쉽고 편리한 서비스, 가맹점에게는 사업에 집중할 수 있는 환경을 제공합니다. 결제 산업의 변화를 주도하며, 더 나은 결제 경험을 만들어가고 있습니다.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-globe" style="color: #6610f2;"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>토스씨엑스</h3>
+              </a>
+              <p>토스씨엑스(CX)는 고객 경험을 최우선으로 생각하며, 미친 만족감을 제공하기 위해 노력합니다. 고객의 요구를 충족시키고, 그 이상의 가치를 전달하는 경험을 통해 고객 만족과 성공을 실현합니다.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-phone" style="color: #f3268c;"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>토스모바일</h3>
+              </a>
+              <p>토스모바일은 금융 서비스에서의 혁신을 기반으로, 사용자가 쉽게 이해하고 편리하게 이용할 수 있는 통신 서비스를 제공하려 합니다. 또한, 고객에게 직관적이고 사용자 친화적인 경험을 제공하며, 알뜰폰 서비스를 통해 경쟁력 있는 요금제를 제시하고 있습니다</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- History Section -->
+    <section id="history" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>History</h2>
+        <p>What did toss do</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <!--Tailwind History-->
+            <div class="flex flex-col justify-center divide-y divide-slate-200 [&>*]:py-16">
+
+              <div class="w-full max-w-3xl mx-auto">
+              
+                  <!-- Vertical Timeline -->
+                  <div class="-my-6">
+
+                      <!-- Item #1 -->
+                      <div class="relative pl-8 sm:pl-32 py-6 group">
+                          <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                          <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-orange-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                              <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">2022.09</time>
+                              <div class="text-xl font-bold text-slate-900">5,300억 원 투자 유치 (기업가치 한화 9조 원 돌파)</div>
+                          </div>
+                      </div>
+
+                      <!-- Item #3 -->
+                      <div class="relative pl-8 sm:pl-32 py-6 group">
+                        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                        <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-orange-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                            <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">2021.10</time>
+                            <div class="text-xl font-bold text-slate-900">(주)토스뱅크 출범</div>
+                        </div>
+                      </div>
+
+                      <!-- Item #2 -->
+                      <div class="relative pl-8 sm:pl-32 py-6 group">
+                        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                        <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-orange-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                            <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">2019.10</time>
+                            <div class="text-xl font-bold text-slate-900">월간 활성 사용자 1,000만 명 돌파</div>
+                        </div>
+                    </div>
+
+                      <!-- Item #2 -->
+                      <div class="relative pl-8 sm:pl-32 py-6 group">
+                        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                        <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-orange-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                            <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">2018.10</time>
+                            <div class="text-xl font-bold text-slate-900">세계 100대 핀테크 기업 중 28위 선정</div>
+                        </div>
+                    </div>
+                      
+                      <!-- Item #3 -->
+                      <div class="relative pl-8 sm:pl-32 py-6 group">
+                          <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                          <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-orange-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                              <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">2016.12</time>
+                              <div class="text-xl font-bold text-slate-900">구글 플레이 ‘2016 올해의 베스트앱' 대상 수상</div>
+                          </div>
+                      </div>
+                      
+                      <!-- Item #4 -->
+                      <div class="relative pl-8 sm:pl-32 py-6 group">
+                          <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                          <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-orange-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                              <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">2015.02</time>
+                              <div class="text-xl font-bold text-slate-900">간편 송금 서비스 출시</div>
+                          </div>
+                      </div>
+                      
+                      <!-- Item #5 -->
+                      <div class="relative pl-8 sm:pl-32 py-6 group">
+                          <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                          <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-orange-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                              <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">2013.04</time>
+                              <div class="text-xl font-bold text-slate-900">㈜비바리퍼블리카 설립</div>
+                          </div>
+                      </div>
+                      
+
+                  </div>
+                  <!-- End: Vertical Timeline #1 -->
+                  
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /History Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Executives</h2>
+        <p>Toss excutive Team</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="media/토스팀리더-이승건.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>이승건</h4>
+                <span>Toss Leader</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="media/토스뱅크리더-이은미-01.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>이은미</h4>
+                <span>Toss Bank Leader</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="media/토스인슈어런스리더-조병익.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>조병익</h4>
+                <span>Toss Insurance Leader</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="media/토스씨엑스리더-강희진.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>강희진</h4>
+                <span>Toss CX Leader</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Recent Posts Section -->
+    <section id="recent-posts" class="recent-posts section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Recent Posts</h2>
+        <p>Recent Toss Posts<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+
+              <div class="post-img">
+                <img src="https://static.toss.im/ipd-tcs/toss_core/live/a6f55250-7bd8-46fc-ba6b-3c51b2ee14b6/%E1%84%89%E1%85%A1%E1%84%8C%E1%85%B5%E1%86%AB%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD_%E1%84%90%E1%85%A9%E1%84%89%E1%85%B3_%E1%84%89%E1%85%B5%E1%86%AB%E1%84%92%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B3%E1%86%AB%E1%84%92%E1%85%A2%E1%86%BC%E1%84%80%E1%85%AA_%E1%84%89%E1%85%B5%E1%86%AB%E1%84%92%E1%85%A1%E1%86%AB_%E1%84%90%E1%85%A9%E1%84%89%E1%85%B3%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5_%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%80%E1%85%B3%E1%86%B7_%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%89%E1%85%B5.png" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">새소식</p>
+
+              <h2 class="title">
+                <a href="https://blog.toss.im/article/tosspay-shinhan">토스, 신한은행과 ‘신한 토스페이 적금’ 출시</a>
+              </h2>
+
+              <p class="post-date">
+                <time datetime="2024-12-03">Dec 3, 2024</time>
+              </p>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article>
+
+              <div class="post-img">
+                <img src="https://static.toss.im/ipd-tcs/toss_core/live/e60c44ba-2543-4ee4-9c55-0eb3ed1abcb6/%EC%82%AC%EC%A7%84%EC%9E%90%EB%A3%8C_%ED%86%A0%EC%8A%A4_%EC%9E%AC%EC%99%B8%EA%B5%AD%EB%AF%BC_%EC%9D%B8%EC%A6%9D%EC%84%9C_%EB%B0%9C%EA%B8%89_%EC%8B%9C%EB%B2%94_%EC%84%9C%EB%B9%84%EC%8A%A4_%EA%B0%9C%EC%8B%9C.png" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">새소식</p>
+
+              <h2 class="title">
+                <a href="https://blog.toss.im/article/OverseasKoreans">토스, ‘재외국민 인증서 발급 시범 서비스’ 개시</a>
+              </h2>
+
+              <p class="post-date">
+                <time datetime="2024-11-28">Nov 28, 2024</time>
+              </p>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <article>
+
+              <div class="post-img">
+                <img src="https://static.toss.im/ipd-tcs/toss_core/live/834a2dbd-2627-4363-8cc1-038535262406/%E1%84%89%E1%85%A1%E1%84%8C%E1%85%B5%E1%86%AB%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD_%E1%84%90%E1%85%A9%E1%84%89%E1%85%B3_%E1%84%86%E1%85%A5%E1%84%82%E1%85%B5%E1%84%87%E1%85%AE%E1%86%A8_%E1%84%89%E1%85%AE%E1%84%8B%E1%85%B5%E1%86%A8%E1%84%80%E1%85%B3%E1%86%B7_3%E1%84%8B%E1%85%A5%E1%86%A8_%E1%84%8B%E1%85%AF%E1%86%AB_%E1%84%80%E1%85%B3%E1%86%B7%E1%84%8B%E1%85%B2%E1%86%BC%E1%84%89%E1%85%A9%E1%84%8B%E1%85%AC%E1%84%8E%E1%85%B3%E1%86%BC%E1%84%8B%E1%85%A6_%E1%84%80%E1%85%B5%E1%84%87%E1%85%AE.jpg" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">새소식</p>
+
+              <h2 class="title">
+                <a href="https://blog.toss.im/article/moneybook-">토스, ‘머니북’ 수익금 3억 원 금융소외층에 기부</a>
+              </h2>
+
+              <p class="post-date">
+                <time datetime="2024-11-27">Nov 27, 2024</time>
+              </p>
+
+            </article>
+          </div><!-- End post list item -->
+
+        </div><!-- End recent posts list -->
+
+      </div>
+
+    </section><!-- /Recent Posts Section -->
+    <br><br><br><br><br><br>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+      <div class="container">
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div> 
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
