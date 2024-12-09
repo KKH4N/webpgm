@@ -48,3 +48,12 @@ Chapter 02
 [Bootstrap으로 리스트 제작](https://github.com/KKH4N/webpgm/tree/main/1119/Bootstrap_list)
 
 [Bootstrap Treeview](https://github.com/KKH4N/webpgm/tree/main/1126)
+
+[가고 싶은 회사 소개 사이트](https://kkh4n.github.io/webpgm/introducingCompany/index.html)
+
+
+### 발표자료
+
+[깃허브 소개 PDF](https://github.com/KKH4N/webpgm/blob/main/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%9B%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.pdf)
+
+[회사 소개 사이트 제작 PDF](https://github.com/KKH4N/webpgm/blob/main/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%ED%9A%8C%EC%82%AC%20%EC%86%8C%EA%B0%9C%20%EC%82%AC%EC%9D%B4%ED%8A%B8%20%EC%A0%9C%EC%9E%91.pdf)
