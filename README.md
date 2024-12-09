@@ -1,6 +1,6 @@
 # 2024 웹프로그래밍 리포지토리
 
-## 명품 HTML5+CSS3+Javascript 웹 프로그래밍
+### 명품 HTML5+CSS3+Javascript 웹 프로그래밍
 
 Chapter 01
 [Open challenge](https://github.com/KKH4N/webpgm/tree/main/0910/P58_open_challenge)
@@ -33,7 +33,7 @@ Chapter 02
 [Chapter 12](https://github.com/KKH4N/webpgm/tree/main/1119/C13)
 
 
-## etc.
+### etc.
 
 [자기 소개 페이지 01](https://github.com/KKH4N/webpgm/tree/main/1008/etc/Introduce)
 
