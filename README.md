@@ -2,14 +2,11 @@
 ## 명품 HTML5+CSS3+Javascript 웹 프로그래밍
 
 Chapter 01
-
 [Open challenge](https://github.com/KKH4N/webpgm/tree/main/0910/P58_open_challenge)
 
 
 Chapter 02
-
-[Open challenge](https://github.com/KKH4N/webpgm/tree/main/0910/P104_open_challenge)
-[Problem](https://github.com/KKH4N/webpgm/tree/main/0924/C02)
+[Open challenge](https://github.com/KKH4N/webpgm/tree/main/0910/P104_open_challenge) [Problem](https://github.com/KKH4N/webpgm/tree/main/0924/C02)
 
 
 [Chapter 03](https://github.com/KKH4N/webpgm/tree/main/0924/C03)
